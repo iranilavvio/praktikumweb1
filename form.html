@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+    <title> Belajar Form </title>
+</head>
+
+<body style="background-color: rgb(220, 250, 248);">
+    
+    <form action="#" method="POST">
+        <table>
+
+            <tr>
+                <td> <label for="name"> Nama Mahasiswa </label> </td>
+                <td> <input type="text" name="nama" placeholder="Masukkan Nama Mahasiswa" required> </td>
+            </tr>
+            <tr>
+                <td> <label for="umur"> Umur </label></td>
+                <td> <input type="number" name="umur" placeholder="Masukkan Umur"> </td>
+            </tr>
+            <tr>
+                <td> <label for="tgl_lahir"> Tanggal Lahir </label> </td>
+                <td> <input type="date" name="tgl_lahir" placeholder="Pilih Tanggal"> </td>
+            </tr>
+            <tr>
+                <td><label for="jk"> Jenis Kelamin </label></td>
+                <td>
+                    <input type="radio" value="L" name="jk">Laki-laki
+                    <input type="radio" value="P" name="jk">Perempuan
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="#"> Hobbi </label></td>
+                <td>
+                    <input type="checkbox" name="hobi" value="basket"> Basket
+                    <input type="checkbox" name="hobi" value="footsal"> Footsal
+                    <input type="checkbox" name="hobi" value="Hiking"> Hiking
+                </td>
+            </tr>
+            <tr>
+                <td><label for="upload"> Upload Poto </label></td>
+                <td><input type="file" name="photo"></td>
+            </tr>
+            <tr>
+                <td><label for="password"> Password </label></td>
+                <td><input type="password" placeholder="Masukkan Password"></td>
+            </tr>
+            <tr>
+                <td><label for="warna_favorit"> Pilih Warna </label></td>
+                <td><input type="color" name="favcolor" value="#40eb34"></td>
+            </tr>
+            <tr>
+                <td>Ini Reset & Submit</td>
+                <td>
+                    <input type="reset" value="Batal">
+                    <input type="submit" value="Simpan">
+                </td>
+            </tr>
+            <tr>
+                <td> Pilih Kendaraan</td>
+                <td>
+                    <select name="kendaraan" id="kendaraan">
+                        <option value="" disabled>--Pilih Salah Satu --</option>
+                        <option value="sepeda"> Sepeda</option>
+                        <option value="motor"> Motor </option>
+                        <option value="mobil"> Mobil </option>
+                        <option value="bus"> Bus </option>
+                        <option value="kapal_laaut"> Kapal Laut</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="alamat"> Alamat </label></td>
+                <td><textarea name="alamat" id="alamat" cols="30" rows="10" style="resize: none;"></textarea></td>
+            </tr>
+
+        </table>
+        
+    </form>
+
+</body>
+</html>

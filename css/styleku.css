@@ -1,0 +1,105 @@
+body{
+    font-family: 16px/28px Arial, sans-serif;
+    background-color: #eaeaea;
+    background-image:url(../asset/background.jpg) ;
+    color: #333;
+}
+
+.container{
+    width: 800px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.header{
+    padding: 20px;
+}
+
+.header .judul{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header ul li{
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.header a{
+    text-decoration: none;
+    color: rgb(248, 162, 152);
+}
+
+.header a:hover{
+    background-color: rgb(198, 173, 230);
+    color: white;
+}
+
+.hero{
+    height: 250px;
+    background-image: url(../asset/kopilaptop.png);
+    background-size: cover;
+    border-bottom: 5px solid  rgb(198, 173, 230);
+    border-top: 4px solid rgb(248, 162, 152);
+}
+
+.content{
+    padding: 20px;
+}
+
+.content h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content .penulis{
+    font-size: 11px;
+    margin-top: -2px;
+    font-style: italic;
+}
+
+.content .penulis a{
+    color: salmon;
+    text-decoration: none;
+}
+
+.content p{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.footer{
+    background-color: #333;
+    padding: 10px;
+}
+
+.footer .copy{
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer a{
+    color: #eaeaea;
+    text-decoration: none;
+}
+
+
+@keyframes zoominoutsiglefeatured{
+    0%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(1.2, 1.2);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+
+.footer .heart{
+    color: red;
+    font-size: 20px;
+    animation: zoominoutsiglefeatured 1s infinite;
+}
